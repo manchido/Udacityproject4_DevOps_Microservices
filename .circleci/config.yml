@@ -12,7 +12,8 @@ jobs:
     working_directory: ~/Udacityproject4_DevOps_Microservices/project-ml-microservice-kubernetes
 
     steps:
-      - checkout
+      - checkout:
+          path: ~/Udacityproject4_DevOps_Microservices
 
       # Download and cache dependencies
       - restore_cache:
