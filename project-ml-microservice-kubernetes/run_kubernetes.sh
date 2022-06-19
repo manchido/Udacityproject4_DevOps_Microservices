@@ -8,8 +8,7 @@ dockerpath=chidoziemelvin/flask_app
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-kubectl create deployment flask-app --image=$dockerpath
-kubectl expose deployment flask-app --type=NodePort --port=80
+kubectl run flask-app --image=$dockerpath --port=80
 
 
 
